@@ -25,6 +25,7 @@ export const pushIngredients = async (req, res, next) => {
 
     await ingredient.save();
         res.status(200).json({ data: "Ingredient created", ingredient });
+        console.log(req.body)
     } catch (error) {
         console.log(error);
     }
