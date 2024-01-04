@@ -2,7 +2,8 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 
-import { ingredients } from "./routes/fridge.routes.mjs";
+import { fridgeIngredients } from "./routes/fridge.routes.mjs";
+import { entreesIngredients } from "./routes/entrees.routes.mjs";
 
 const app = express();
 
@@ -18,6 +19,8 @@ app.use(
 
 //? ROUTES
 
-app.use("/api/fridge", ingredients);
+app.use("/api/fridge", fridgeIngredients);
+app.use("/api/entrees", entreesIngredients);
+
 
 export default app;
