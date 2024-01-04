@@ -4,8 +4,6 @@ import cors from "cors";
 
 import { fridgeIngredients } from "./routes/fridge.routes.mjs";
 import { entreesIngredients } from "./routes/entrees.routes.mjs";
-import { mainCoursesIngredients } from "./routes/main-courses.routes.mjs";
-import { dessertIngredients } from "./routes/dessert.routes.mjs";
 
 const app = express();
 
@@ -23,7 +21,7 @@ app.use(
 
 app.use("/api/fridge", fridgeIngredients);
 app.use("/api/entrees", entreesIngredients);
-app.use("/api/mainCourses", mainCoursesIngredients);
-app.use("/api/dessert", dessertIngredients);
+app.use("/api/entrees", entreesIngredients);
+app.use("/api/entrees", entreesIngredients);
 
 export default app;

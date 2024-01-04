@@ -5,7 +5,7 @@ import cors from "cors";
 import { fridgeIngredients } from "./routes/fridge.routes.mjs";
 import { entreesIngredients } from "./routes/entrees.routes.mjs";
 import { mainCoursesIngredients } from "./routes/main-courses.routes.mjs";
-import { dessertIngredients } from "./routes/dessert.routes.mjs";
+import { mainCoursesIngredients } from "./routes/main-courses.routes.mjs";
 
 const app = express();
 
